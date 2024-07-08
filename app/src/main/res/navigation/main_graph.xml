@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.tourapp.ui.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_menuPrincipalFragment"
+            app:destination="@id/menuPrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.tourapp.ui.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuPrincipalFragment"
+        android:name="com.example.tourapp.ui.MenuPrincipalFragment"
+        android:label="fragment_menu_principal"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_tourPackageListFragment"
+            app:destination="@id/tourPackageListFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_showMoneyCurrentUserFragment"
+            app:destination="@id/showMoneyCurrentUserFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_purchaseHistoryFragment"
+            app:destination="@id/purchaseHistoryFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_aboutAsFragment"
+            app:destination="@id/aboutAsFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseHistoryFragment"
+        android:name="com.example.tourapp.ui.PurchaseHistoryFragment"
+        android:label="fragment_purchase_history"
+        tools:layout="@layout/fragment_purchase_history" >
+        <action
+            android:id="@+id/action_purchaseHistoryFragment_to_menuPrincipalFragment"
+            app:destination="@id/menuPrincipalFragment" />
+        <action
+            android:id="@+id/action_purchaseHistoryFragment_to_viewFullPictureFragment"
+            app:destination="@id/viewFullPictureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showMoneyCurrentUserFragment"
+        android:name="com.example.tourapp.ui.ShowMoneyCurrentUserFragment"
+        android:label="fragment_show_money_current_user"
+        tools:layout="@layout/fragment_show_money_current_user" >
+        <action
+            android:id="@+id/action_showMoneyCurrentUserFragment_to_menuPrincipalFragment"
+            app:destination="@id/menuPrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourPackageListFragment"
+        android:name="com.example.tourapp.ui.TourPackageListFragment"
+        android:label="fragment_tour_package_list"
+        tools:layout="@layout/fragment_tour_package_list" >
+        <action
+            android:id="@+id/action_tourPackageListFragment_to_menuPrincipalFragment"
+            app:destination="@id/menuPrincipalFragment" />
+        <action
+            android:id="@+id/action_tourPackageListFragment_to_tourPackageDetailsFragment"
+            app:destination="@id/tourPackageDetailsFragment" />
+        <action
+            android:id="@+id/action_tourPackageListFragment_to_purchasePackageFragment"
+            app:destination="@id/purchasePackageFragment" />
+        <action
+            android:id="@+id/action_tourPackageListFragment_to_viewFullPictureFragment"
+            app:destination="@id/viewFullPictureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutAsFragment"
+        android:name="com.example.tourapp.ui.AboutAsFragment"
+        android:label="fragment_about_as"
+        tools:layout="@layout/fragment_about_as" >
+        <action
+            android:id="@+id/action_aboutAsFragment_to_menuPrincipalFragment"
+            app:destination="@id/menuPrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourPackageDetailsFragment"
+        android:name="com.example.tourapp.ui.TourPackageDetailsFragment"
+        android:label="fragment_tour_package_details"
+        tools:layout="@layout/fragment_tour_package_details" >
+        <action
+            android:id="@+id/action_tourPackageDetailsFragment_to_tourPackageListFragment"
+            app:destination="@id/tourPackageListFragment" />
+        <action
+            android:id="@+id/action_tourPackageDetailsFragment_to_viewFullPictureFragment"
+            app:destination="@id/viewFullPictureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.tourapp.ui.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_menuPrincipalFragment"
+            app:destination="@id/menuPrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchasePackageFragment"
+        android:name="com.example.tourapp.ui.PurchasePackageFragment"
+        android:label="fragment_purchase_package"
+        tools:layout="@layout/fragment_purchase_package" >
+        <action
+            android:id="@+id/action_purchasePackageFragment_to_tourPackageListFragment"
+            app:destination="@id/tourPackageListFragment" />
+        <action
+            android:id="@+id/action_purchasePackageFragment_to_menuPrincipalFragment"
+            app:destination="@id/menuPrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFullPictureFragment"
+        android:name="com.example.tourapp.ui.ViewFullPictureFragment"
+        android:label="fragment_view_full_picture"
+        tools:layout="@layout/fragment_view_full_picture" />
+</navigation>

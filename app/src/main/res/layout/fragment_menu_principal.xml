@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blueScreen"
+        tools:context=".ui.MenuPrincipalFragment">
+
+        <ImageView
+            android:id="@+id/iv_wallpaper_fondo"
+            android:layout_width="601dp"
+            android:layout_height="965dp"
+            android:contentDescription="@string/wallpaper_menu"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VisualLintBounds"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btn_logOut"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/style_bord_textview3"
+            android:textColor="@color/white"
+            android:fontFamily="@font/home_alone"
+            android:gravity="center"
+            android:text="@string/log_out_user"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
+
+        <Button
+            android:id="@+id/btn_History"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/home_alone"
+            android:background="@drawable/style_bord_textview3"
+            android:gravity="center"
+            android:text="@string/view_history"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.394" />
+
+        <Button
+            android:id="@+id/btn_SelectTourPack"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/style_bord_textview3"
+            android:fontFamily="@font/home_alone"
+            android:gravity="center"
+            android:text="@string/view_tour_package"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.245"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_accountMoney"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/style_bord_textview3"
+            android:fontFamily="@font/home_alone"
+            android:gravity="center"
+            android:text="@string/view_money"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.535" />
+
+        <TextView
+            android:id="@+id/tv_MenuPrincipal"
+            android:layout_width="388dp"
+            android:layout_height="69dp"
+            android:background="@drawable/style_bord_textview3"
+            android:fontFamily="@font/home_alone"
+            android:gravity="bottom|center"
+            android:text="@string/textview_MenuPrincipal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="italic"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.048" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

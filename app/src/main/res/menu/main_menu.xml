@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/userProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_action_user"
+        android:title="@string/user_profile_item"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/userMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/user_money_item"
+        android:icon="@drawable/ic_action_money"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/purchaseHistoryUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/purchase_history_item"
+        android:icon="@drawable/ic_action_cart"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/aboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/about_us"
+        android:icon="@drawable/ic_action_borbotones"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_bar_logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/log_out_item"
+        android:icon="@drawable/ic_action_logout"
+        app:showAsAction="never"
+        android:iconTint="@color/white"/>
+
+</menu>
